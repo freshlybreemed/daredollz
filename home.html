@@ -6,7 +6,7 @@
   <meta name="description" content="Dare Dollz — Collectibles, Comics & Apparel. A universe set in the hyper-advanced city of Carnado.">
   <title>DARE DOLLZ</title>
   <link rel="icon" type="image/png" href="assets/images/logo2.png">
-  <link rel="stylesheet" href="css/style.css?v=17">
+  <link rel="stylesheet" href="css/style.css?v=39">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">Dollz</a></li>
-      <li><a href="#comics">Comics</a></li>
+      <li><a href="#comics">Comicz</a></li>
       <li><a href="#creatorz">Creatorz</a></li>
       <li><a href="https://daredollz95.myshopify.com" target="_blank" rel="noopener" class="nav-shop">Shop</a></li>
       <li><a href="#" id="cart-toggle" class="nav-cart" aria-label="Cart">&#x1f6d2;<span id="cart-count" class="cart-count">0</span></a></li>
@@ -32,16 +32,16 @@
 
   <!-- ══════════════ HERO ══════════════ -->
   <section id="hero" class="hero">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="hero-kicker">Carnado Universe · Est. 2024</p>
-        <h1 class="hero-headline">Welcome to<br>the Universe</h1>
-        <div class="hero-cta">
-          <a href="#about" class="btn btn-primary">Explore</a>
-          <a href="https://daredollz95.myshopify.com" target="_blank" rel="noopener" class="btn btn-outline">Shop</a>
-        </div>
+    <img src="assets/images/hero-squad.png" alt="" class="hero-char hero-char-left"  aria-hidden="true">
+    <img src="assets/images/hero-demi.png"  alt="" class="hero-char hero-char-right" aria-hidden="true">
+
+    <div class="hero-copy">
+      <p class="hero-kicker">Dare Dollz · Est. 2017</p>
+      <h1 class="hero-headline">Welcome to<br>the Universe</h1>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary">Explore</a>
+        <a href="https://daredollz95.myshopify.com" target="_blank" rel="noopener" class="btn btn-outline">Shop</a>
       </div>
-      <img src="assets/images/cv-car.png" alt="The Dare Dollz" class="hero-pic">
     </div>
   </section>
 
@@ -77,24 +77,18 @@
           </div>
 
           <p class="body-text reveal reveal-delay-2">
-            <strong>Dare Dollz</strong> began as a line of collectible dolls inspired by the grit, glamour, and contradictions of street culture. Today, it's a growing universe — spanning comics, collectibles, and apparel.
+            <strong>Dare Dollz</strong> began as a line of collectible dolls inspired by the grit and glamour of street culture. Today, it's a growing universe — spanning comics, collectibles, and apparel.
           </p>
 
           <p class="body-text reveal reveal-delay-3">
             Set in the hyper-advanced city of <strong>Carnado</strong>, Dare Dollz follows <strong>Demi, Paris, Chanel, and Bleu</strong> — stylish social media icons living double lives as elite covert agents. Behind the filters and fame, they navigate loyalty, power, and identity while tracking one of the city's most dangerous figures: the elusive criminal mastermind and Carnado's favorite rapper, <strong>8 Figga</strong>.
           </p>
 
-          <div class="tag-row reveal reveal-delay-3">
-            <span class="tag tag-pink">Sci-Fi</span>
-            <span class="tag tag-yellow">Action</span>
-            <span class="tag tag-blue">Drama</span>
-            <span class="tag tag-purple">Street Culture</span>
-          </div>
         </div>
 
         <!-- Image -->
         <div class="about-img-wrap reveal reveal-delay-1">
-          <img src="assets/images/dollbanner.jpg" alt="Dare Dollz collectible dolls" class="about-img">
+          <img src="assets/images/cv-car.png" alt="The Dare Dollz" class="about-img">
         </div>
       </div>
     </div>
@@ -104,8 +98,7 @@
       <div class="comic-inner comic-stacked">
 
         <div class="comic-title reveal">
-          <p class="section-label" style="color: var(--pink);">// The Comics</p>
-          <h2 class="section-title">THE <span class="accent">COMIC BOOK</span></h2>
+          <h2 class="section-title"><span class="accent">COMICZ</span></h2>
         </div>
 
         <img src="assets/images/comic-covers.png" alt="Dare Dollz: Age of Consent — comic covers & zines" class="comic-covers reveal">
@@ -118,14 +111,9 @@
           </blockquote>
 
           <p class="body-text reveal reveal-delay-2">
-            <span style="color: var(--blue); font-weight: 700;">Dare Dollz: Age of Consent</span> blends science fiction, action, and drama. Behind the followers and the fame, these four women are something far more dangerous.
+            <span style="color: #111; font-weight: 700;">Dare Dollz: Age of Consent</span> blends science fiction, action, and drama. Behind the followers and the fame, these four women are something far more dangerous.
           </p>
 
-          <div class="tag-row reveal reveal-delay-2">
-            <span class="tag tag-pink">Comics</span>
-            <span class="tag tag-yellow">Collectibles</span>
-            <span class="tag tag-blue">Apparel</span>
-          </div>
 
           <a href="http://paperturn-view.com/us/dare-dollz/dare-dollz-age-of-consent?pid=Mjc276345&v=1.45" target="_blank" rel="noopener" class="btn btn-primary reveal reveal-delay-3" style="align-self: flex-start; margin-top: 8px;">
             Read the Comics
@@ -176,6 +164,37 @@
     </div>
   </aside>
 
+  <!-- ══════════════ PRODUCT DETAIL MODAL ══════════════ -->
+  <div id="product-overlay" class="product-overlay">
+    <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+      <button class="pm-close" id="pm-close" aria-label="Close">&times;</button>
+
+      <div class="pm-media">
+        <img id="pm-img" class="pm-img" alt="">
+      </div>
+
+      <div class="pm-info">
+        <h2 class="pm-title" id="pm-title"></h2>
+        <p class="pm-price" id="pm-price"></p>
+
+        <div class="pm-options" id="pm-options"></div>
+
+        <div class="pm-qty-row">
+          <p class="pm-option-label">Quantity</p>
+          <div class="pm-qty">
+            <button type="button" class="pm-qty-btn" id="pm-qty-minus" aria-label="Decrease quantity">-</button>
+            <span id="pm-qty-value" class="pm-qty-value">1</span>
+            <button type="button" class="pm-qty-btn" id="pm-qty-plus" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary pm-atc" id="pm-atc">Add to Cart</button>
+
+        <div class="pm-desc" id="pm-desc"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- ── CAUTION TAPE ── -->
   <div class="marquee-tape" aria-hidden="true">
     <div class="marquee-inner">
@@ -191,8 +210,8 @@
       <div class="creatorz-head">
         <p class="section-label reveal" style="color: rgba(255,255,255,0.4);">// Behind the Universe</p>
         <h2 class="creatorz-title reveal reveal-delay-1">CREATORZ</h2>
-        <p class="body-text reveal reveal-delay-2" style="max-width: 520px; color: rgba(255,255,255,0.55);">
-          A multidisciplinary creative duo raised in Washington, D.C. — where art, fashion, storytelling, and city life converge.
+        <p class="creatorz-greenbox reveal reveal-delay-2">
+          A multidisciplinary creative duo raised in Washington, D.C.
         </p>
       </div>
 
@@ -201,8 +220,8 @@
 
         <!-- Photo -->
         <div class="bio-photo-wrap reveal">
-          <img src="assets/images/bio.jpg" alt="Darius and Dare Moreno" class="bio-photo">
-          <p class="bio-photo-caption">Darius &amp; Dare Moreno</p>
+          <img src="assets/images/bio.jpg" alt="Dare and Darius Moreno" class="bio-photo">
+          <p class="bio-photo-caption">Dare &amp; Darius Moreno</p>
         </div>
 
         <!-- Bios -->
@@ -210,7 +229,7 @@
 
           <p class="body-text reveal" style="color: rgba(255,255,255,0.6);">
             <strong style="color:#fff;">Dare Dollz</strong> is created by twin siblings
-            <strong style="color: var(--yellow);">Darius and Dare Moreno</strong> — a multidisciplinary creative duo raised in Washington, D.C. Their work is shaped by the cultural intersections of art, fashion, storytelling, and city life.
+            <strong style="color: var(--yellow);">Dare and Darius Moreno</strong> — a multidisciplinary creative duo raised in Washington, D.C. Their work is shaped by the cultural intersections of art, fashion, storytelling, and city life.
           </p>
 
           <div class="creator-block reveal reveal-delay-1">
@@ -229,17 +248,10 @@
 
           <div class="origin-box reveal reveal-delay-3">
             <p>
-              The twins were initially inspired by their grandmother's collection of porcelain dolls. They launched <strong style="color:#fff;">Dare Dollz</strong> as a collectible art project, which quickly evolved into a narrative universe — now including dolls, comics, and fashion. Today, Dare Dollz serves as the intersection of their creative practices: visual art meets storytelling, culture meets collectibility.
+              The twins were initially inspired by their grandmother's collection of porcelain dolls. They launched <strong style="color:#111;">Dare Dollz</strong> as a collectible art project, which quickly evolved into a narrative universe — now including dolls, comics, and fashion. Today, Dare Dollz serves as the intersection of their creative practices: visual art meets storytelling, culture meets collectibility.
             </p>
           </div>
 
-          <div class="tag-row reveal reveal-delay-3">
-            <span class="tag tag-yellow">Washington D.C.</span>
-            <span class="tag tag-blue">Fine Art</span>
-            <span class="tag tag-pink">Fashion</span>
-            <span class="tag tag-purple">Storytelling</span>
-            <span class="tag tag-green">Comics</span>
-          </div>
 
         </div>
       </div>
@@ -249,7 +261,7 @@
   <!-- ══════════════ FOOTER ══════════════ -->
   <footer class="footer">
     <img src="assets/images/logo-dare.png" alt="Dare Dollz" class="footer-logo">
-    <p class="footer-copy">&copy; 2025 Dare Dollz. All Rights Reserved.</p>
+    <p class="footer-copy">&copy; <span id="footer-year">2025</span> Dare Dollz. All Rights Reserved.</p>
     <div class="footer-links">
       <a href="https://www.instagram.com/daredollz/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.tiktok.com/@daredollz" target="_blank" rel="noopener">TikTok</a>
@@ -282,9 +294,9 @@
 
   <!-- Shopify Buy SDK -->
   <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
-  <script src="js/shopify.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/id-float.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/shopify.js?v=18"></script>
+  <script src="js/main.js?v=39"></script>
+  <script src="js/id-float.js?v=18"></script>
+  <script src="js/modal.js?v=18"></script>
 </body>
 </html>
