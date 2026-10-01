@@ -182,6 +182,11 @@ body {
   z-index: 20;
   border-top: 4px solid #111;
   border-bottom: 4px solid #111;
+  /* Where the tape overlaps composited content (hero) Chrome promotes it to
+     its own layer, and a rotated layer's outer edge isn't antialiased. A
+     transparent outline pads the layer so the border sits inside it and
+     gets filtered smoothly. */
+  outline: 1px solid transparent;
 }
 .marquee-tape.tape-reverse {
   transform: rotate(1deg);
